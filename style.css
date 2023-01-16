@@ -1,0 +1,141 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+
+
+.clock {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.marking {
+    position: absolute;
+    top: 178px;
+    width: 358px;
+    border: 1px solid var(--clr-secondary);
+}
+
+.marking-big {
+    left: -8px;
+    width: 374px;
+}
+
+.marking-12-6 {
+    transform: rotate(90deg);
+}
+
+.marking-1-7 {
+    transform: rotate(120deg);
+}
+
+.marking-2-8 {
+    transform: rotate(150deg);
+}
+
+.marking-4-10 {
+    transform: rotate(210deg);
+}
+
+.marking-5-11 {
+    transform: rotate(240deg);
+}
+
+.clock_inner_face {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background: var(--clr-dark);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.center_dot {
+    position: absolute;
+    top: 171px;
+    left: 171px;
+    width: 16px;
+    height: 16px;
+    background: var(--clr-primary);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.hour_hand {
+    width: 139px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    top: 178px;
+    left: 40px;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    z-index: 3;
+}
+
+.min_hand {
+    width: 167px;
+    height: 2px;
+    position: absolute;
+    top: 178px;
+    left: 12px;
+    background: rgba(255, 255, 255, 0.75);
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    z-index: 3;
+}
+
+.sec_hand {
+    width: 199px;
+    height: 1px;
+    position: absolute;
+    top: 178.5px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.75);
+    transform: rotate(90deg);
+    transform-origin: 85%;
+    z-index: 3;
+}
+
+.digital_clock {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    z-index: 4;
+}
+
+.day {
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 72%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    z-index: 4;
+}
+
+.card-body{
+    background-image: url(img/clock-bg/100347-scary-sleeping-cat.gif);
+    background-size: cover;
+    
+}
